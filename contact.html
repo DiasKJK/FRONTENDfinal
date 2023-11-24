@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- swiper CSS cdn link  -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+        <!-- custom CSS file link  -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font awesome cdn link  -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="shortcut icon" type="image/jpg" href="/images/news2.png"/>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Other CSS links -->
+
+    <!-- Bootstrap JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+    <link rel="stylesheet" href="contact.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var myForm = document.getElementById("myForm");
+    
+            myForm.addEventListener("submit", function (event) {
+                var hasInput = Array.from(myForm.elements).some(function (element) {
+                    return element.tagName === "INPUT" && element.value.trim() !== "";
+                });
+    
+                if (hasInput) {
+                    myForm.reset();
+                    setTimeout(function () {
+                        location.reload(true);
+                    }, 100);
+                } else {
+                    event.preventDefault();
+                }
+            });
+    
+            document.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    var hasInput = Array.from(myForm.elements).some(function (element) {
+                        return element.tagName === "INPUT" && element.value.trim() !== "";
+                    });
+                    if (hasInput) {
+                        myForm.reset();
+                        setTimeout(function () {
+                            location.reload(true);
+                        }, 100);
+                    } else {
+                        event.preventDefault();
+                    }
+                }
+            });
+        });
+    </script>
+    
+    <style>
+        body {
+            background-image: url('images/contactus.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        .my-custom-modal {
+            margin-top: 20%; 
+        }
+        #membershipModal {
+            margin-top: 60px; 
+        }
+    </style>
+    
+    
+    
+    
+    </head>
+    <body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo">PULSE <span>UP</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="quiz.html">quiz</a>
+            <a href="news.html">blog</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+<div class="icons">
+    <a href="#" class="btn btn-succcess" data-toggle="modal" data-target="#membershipModal">Become a member</a>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</div>
+
+
+    </header>
+
+    <!-- header section ends  -->
+    <section></section>
+    <section></section>
+        <section>
+            <div class="container">
+                <div class="contactInfo"> 
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="/images/location.png"></span>
+                                <span>Astana IT University<br>
+                                    Kazakhstan<br>
+                                    010000</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span><img src="/images/mail.png"></span>
+                                <span><a href = "mailto: nassosanagn@gmail.com">aitu@gmail.com</a></span>
+                            </li>
+                            <li>
+                                <span><img src="/images/call.png"></span>
+                                <span>8 798 310 9110</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="#"><img src="/images/1.png"></a></li>
+                        <li><a href="#"><img src="/images/3.png"></a></li>
+                        <li><a href="#"><img src="/images/2.png"></a></li>
+                        <li><a href="#"><img src="/images/5.png"></a></li>
+                        
+                    </ul>
+                </div>
+                    <div class="contactForm">
+                        <h2>Send a Message</h2>
+                        <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <form id="myForm">
+                                <!-- Form fields go here -->
+                                <input type="submit" value="Send">
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+             
+        </section>
+        <section></section>
+        <!-- footer section starts  -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h1>about</h1>
+                    <div class="text">
+                        <p>At PULSE UP, we understand that true well-being encompasses more than just physical fitness. Therefore, our offerings extend beyond traditional gym services, incorporating wellness programs, nutritional guidance, and a supportive community to ensure a comprehensive approach to health.</p>
+                    </div>
+                    <div class="icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h1>contact info</h1>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Astana IT University, Astana, Kazakhstan </a>
+                        <a href="#"><i class="fas fa-phone-alt"></i>+111 242 4942 290</a>
+                        <a href="#"><i class="fas fa-envelope"></i>aitu@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h1>Quick links</h1>
+                    <div class="icons">
+                        <a href="index.html">home</a>
+                        <a href="about.html">about</a>
+                        <a href="quiz.html">quiz</a>
+                        <a href="news.html">blog</a>
+                        <a href="contact.html">contact</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="membershipModal" tabindex="-1" role="dialog" aria-labelledby="membershipModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="membershipModalLabel">Become a Member</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="btn btn-green" onclick="event.preventDefault(); playSubmitSound();">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Audio Element -->
+<audio id="submitSound" src="images/ringtone-1.mp3"></audio>
+
+<!-- JavaScript Function to Play Sound -->
+<script>
+    function playSubmitSound() {
+        var audio = document.getElementById('submitSound');
+        audio.play();
+    }
+</script>
+
+
+  
+        <!-- footer section ends  --> 
+          
+
+        <!-- Bootstrap JS scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+        <!-- swiper JS cdn link  -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> 
+
+
+        <!-- Custom JS file link  -->
+        <script src="script.js"></script>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the elements you want to animate
+            var contactInfo = document.querySelector('.contactInfo');
+            var contactForm = document.querySelector('.contactForm');
+
+            // Add a class to trigger the animation
+            contactInfo.classList.add('fade-in');
+            contactForm.classList.add('fade-in');
+        });
+    </script>
+
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    </body>
+</html>

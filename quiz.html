@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font awesome cdn link  -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Add this inside the <style> tag in the <head> section of your HTML -->
+    <style>
+        #membershipModal {
+            margin-top: 60px;
+        }
+        </style>
+  <style>
+
+    .quiz-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    .options {
+      margin-top: 10px;
+    }
+
+    .options label:hover {
+        background-color: #28a745 !important;
+      }
+  
+      .options label:hover input {
+        color: #fff; 
+      }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('#membershipModal form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            $('#membershipModal').modal('hide');
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        var optionsLabels = document.querySelectorAll('.options label');
+  
+        optionsLabels.forEach(function (label) {
+          label.addEventListener('mouseover', function () {
+            label.style.backgroundColor = '#28a745'; 
+            label.querySelector('input').style.color = '#fff'; 
+          });
+  
+          label.addEventListener('mouseout', function () {
+            label.style.backgroundColor = ''; 
+            label.querySelector('input').style.color = ''; 
+          });
+        });
+      });
+    </script>
+</head>
+
+<body><br><br><br><br><br><br>
+    
+        
+        <!-- header section starts  -->
+    
+        <header class="header">
+    
+            <a href="#" class="logo">PULSE <span>UP</span></a>
+    
+            <nav class="navbar">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="quiz.html">quiz</a>
+                <a href="news.html">blog</a>
+                <a href="contact.html">contact</a>
+            </nav>
+    
+    
+            <div class="icons">
+                <a href="#" class="btn btn-succcess" data-toggle="modal" data-target="#membershipModal">Become a member</a>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </header>
+    
+        <!-- header section ends  -->
+  <div class="container quiz-container">
+    <h1 class="text-center mb-4">Quiz: Test your knowledge on health</h1>
+
+    <!-- Question 1 -->
+    <div class="question">
+      <p><strong>1. It takes ____ to keep your mind alert.</strong></p>
+      <div class="options">
+        <label class="btn btn-success">
+          <input type="radio" name="q1" value="A"> A. Energy
+        </label>
+        <label class="btn btn-success">
+          <input type="radio" name="q1" value="B"> B. Protein
+        </label>
+        <label class="btn btn-success">
+          <input type="radio" name="q1" value="C"> C. Carbon dioxide
+        </label>
+        <label class="btn btn-success">
+          <input type="radio" name="q1" value="D"> D. Vitamins
+        </label>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <p><strong>2. Nutrients are substances that are found in food, and that help your body grow and develop.</strong></p>
+      <div class="options">
+        <label class="btn btn-success">
+          <input type="radio" name="q2" value="A"> A. True
+        </label>
+        <label class="btn btn-success">
+          <input type="radio" name="q2" value="B"> B. False
+        </label>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+        <p><strong>3. Vitamin D is sometimes called the:</strong></p>
+        <div class="options">
+          <label class="btn btn-success">
+            <input type="radio" name="q3" value="A"> A. Sleepy vitamin
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q3" value="B"> B. The "dorky" vitamin
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q3" value="C"> C. The sunshine vitamin
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q3" value="D"> D. Dark vitamin
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+    <div class="question">
+        <p><strong>4. Substances that are found in food that help your body grow and develop:</strong></p>
+        <div class="options">
+          <label class="btn btn-success">
+            <input type="radio" name="q4" value="A"> A. Protein
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q4" value="B"> B. Fiber
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q4" value="C"> C. Calcium
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q4" value="D"> D. Nutrients
+          </label>
+        </div>
+      </div>
+      <!-- Question 5 -->
+    <div class="question">
+        <p><strong>5. _______ is the ability to do work:</strong></p>
+        <div class="options">
+          <label class="btn btn-success">
+            <input type="radio" name="q5" value="A"> A. Digestive system
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q5" value="B"> B. Digestive juices
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q5" value="C"> C. Exercise
+          </label>
+          <label class="btn btn-success">
+            <input type="radio" name="q5" value="D"> D. Energy
+          </label>
+        </div>
+      </div>
+
+    <!-- Submit Button -->
+    <button class="btn btn-success" onclick="submitQuiz()">Submit</button>
+    <div id="result"></div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="membershipModal" tabindex="-1" role="dialog" aria-labelledby="membershipModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="membershipModalLabel">Become a Member</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="btn btn-green" onclick="playSubmitSound()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Audio Element -->
+<audio id="submitSound" src="images/ringtone-1.mp3"></audio>
+
+<!-- JavaScript Function to Play Sound -->
+<script>
+    function playSubmitSound() {
+        var audio = document.getElementById('submitSound');
+        audio.play();
+    }
+</script>
+
+
+        <!-- footer section starts  -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h1>about</h1>
+                    <div class="text">
+                        <p>At PULSE UP, we understand that true well-being encompasses more than just physical fitness. Therefore, our offerings extend beyond traditional gym services, incorporating wellness programs, nutritional guidance, and a supportive community to ensure a comprehensive approach to health.</p>
+                    </div>
+                    <div class="icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h1>contact info</h1>
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-map-marker-alt"></i>Astana IT University, Astana, Kazakhstan </a>
+                        <a href="#"><i class="fas fa-phone-alt"></i>+111 242 4942 290</a>
+                        <a href="#"><i class="fas fa-envelope"></i>aitu@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h1>Quick links</h1>
+                    <div class="icons">
+                        <a href="index.html">home</a>
+                        <a href="about.html">about</a>
+                        <a href="quiz.html">quiz</a>
+                        <a href="news.html">blog</a>
+                        <a href="contact.html">contact</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- footer section ends  -->
+
+
+
+        <!-- Bootstrap JS scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+        <!-- swiper JS cdn link  -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> 
+
+
+        <!-- Custom JS file link  -->
+        <script src="script.js"></script>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    function submitQuiz() {
+      // Scoring logic
+      let score = 0;
+
+      // Question 1
+      const q1Answer = document.querySelector('input[name="q1"]:checked');
+      if (q1Answer && q1Answer.value === 'A') {
+        score++;
+      }
+
+      // Question 2
+      const q2Answer = document.querySelector('input[name="q2"]:checked');
+      if (q2Answer && q2Answer.value === 'A') {
+        score++;
+      }
+
+      // Question 3
+      const q3Answer = document.querySelector('input[name="q3"]:checked');
+      if (q3Answer && q3Answer.value === 'C') {
+        score++;
+      }
+      
+      // Question 4
+      const q4Answer = document.querySelector('input[name="q4"]:checked');
+      if (q4Answer && q4Answer.value === 'D') {
+        score++;
+      }
+
+      // Question 5
+      const q5Answer = document.querySelector('input[name="q5"]:checked');
+      if (q5Answer && q5Answer.value === 'D') {
+        score++;
+      }
+
+      // Display the score
+      document.getElementById('result').innerHTML = `<p>Your score: ${score}</p>`;
+    }
+  </script>
+
+</body>
+
+</html>
